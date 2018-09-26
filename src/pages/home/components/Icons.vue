@@ -1,7 +1,7 @@
 <template>
   <div class="icons">
     <swiper>
-      <swiper-slide v-for="page of pages" :key="index">
+      <swiper-slide v-for="(page,index) of pages" :key="index">
         <div
           class="icon"
           v-for="icon of page"

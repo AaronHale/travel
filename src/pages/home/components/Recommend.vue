@@ -18,7 +18,7 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data() {
+  data () {
     return {
       recommendList: [
         {id: '0001', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
