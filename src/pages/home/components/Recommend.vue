@@ -59,7 +59,7 @@ export default {
           line-height: .54rem
           font-size: .32rem
           ellipsis()
-        .item-info
+        .item-desc
           line-height: .4rem
           color: #cccccc
         .item-button
