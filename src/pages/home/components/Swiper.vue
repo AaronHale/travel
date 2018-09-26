@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption"><!-- slides -->
+    <swiper :options="swiperOption"><!-- slides 父组件传递swiperOptions给swiper子组件 -->
       <swiper-slide v-for="item of swiperList" :key="item.id">
         <img :src="item.imgUrl" alt="" class="swiper-img">
       </swiper-slide>
@@ -41,7 +41,7 @@ export default {
     width:100%
     height:0
     overflow: hidden
-    padding-bottom: 27%
+    padding-bottom: 27%  /*解决图片未加载时高度塌陷*/
     background: #fffffe
     .swiper-img
       width:100%
