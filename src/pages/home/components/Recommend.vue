@@ -18,20 +18,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {id: '0001', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0002', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0003', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0004', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0005', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0006', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0007', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0008', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'},
-        {id: '0009', imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg', title: '北京欢乐谷', desc: '远离城市喧嚣，感受自然之美'}
-      ]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
