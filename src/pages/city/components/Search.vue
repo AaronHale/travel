@@ -8,7 +8,7 @@
       v-show="keyword"
       ref="search">
       <ul>
-        <li class="search-item border-bottom" v-for="(item,index) of list" :key="index">{{item.name}}</li>
+        <li class="search-item border-bottom" v-for="(item,index) of list" :key="index" @click="handleCityClick(item.name)">{{item.name}}</li>
         <li class="search-item border-bottom" v-show="hasNoData">没有找到匹配数据</li>
       </ul>
     </div>
@@ -29,6 +29,12 @@ export default {
       timer: null
     }
   },
+  methods: {
+    handleCityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('./')
+    }
+  },
   watch: {
     keyword () {
       if (this.timer) {
@@ -43,7 +49,7 @@ export default {
         const result = []
         for (let i in this.cities) {
           this.cities[i].forEach((value) => {
-            if (value.spell.indexOf(this.keyword) > -1 || value .name.indexOf(this.keyword) > -1) {
+            if (value.spell.indexOf(this.keyword) > -1 || value.name.indexOf(this.keyword) > -1) {
               result.push(value)
             }
           })
