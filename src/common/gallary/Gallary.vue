@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" @click="handleGallaryClick">
       <div class="wrapper">
         <swiper :options="swiperOptions"><!-- slides 父组件传递swiperOptions给swiper子组件 -->
           <swiper-slide v-for="(item,index) of imags" :key="index">
@@ -34,6 +34,11 @@ export default {
         observeParents: true,
         observer: true
       }
+    }
+  },
+  methods: {
+    handleGallaryClick () {
+      this.$emit('close')
     }
   }
 }
